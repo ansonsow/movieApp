@@ -29,8 +29,9 @@ const MoviesContainer = (props) => {
 
 
     useEffect(() => {
+        console.log(`${baseUrl}tv/${selected}`)
 
-        axios.get(`${baseUrl}/tv/${selected}`,{
+        axios.get(`${baseUrl}tv/${selected}`,{
             params:{
                 api_key:api_key
             }
@@ -45,7 +46,7 @@ const MoviesContainer = (props) => {
     const data = [
         {key:'1', value:'on_the_air'},
         {key:'2', value:'popular'},
-        {key:'3', value:'air_today'},
+        {key:'3', value:'airing_today'},
         {key:'4', value:'top_rated'}
     ]
   
